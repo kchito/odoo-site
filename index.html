@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Odoo</title>
+
+
+  <link href="images/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <link rel="stylesheet" href="plugins/animation/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+
+    <link href="css/styles.css" rel="stylesheet">
+
+
+    <style>
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light nav_odoo pb-0">
+      <div class="container navh pb-3">
+        <a class="navbar-brand" href="index.html">
+            <img class="logo_odoo animate__animated animate__fadeIn animate__delay-3s" src="images/odoo-white.svg" alt="Logo">
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Products</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Pages</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Apps</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Docs</a>
+                  </li>
+              </ul>
+              <form class="d-flex my-2 my-lg-0">
+                <a class="nav-link" href="#">Sign In</a>
+                <button class="btn btn-buy"><i class="fas fa-shopping-bag mx-2"></i>Buy Now</button>
+              </form>
+          </div>
+      </div>
+  </nav>
+
+
+<section id="seccion1" class="py-4 background_banner">
+  <div class="container mt-md-5 mb-5 mt-xs-1">
+      <div class="row">
+
+          <div class="col-md-7 animate__animated animate__backInLeft  ">
+              <h1 class="ptitle text-white mb-5">Development <br>
+              done right</h1>
+              <p class="txtbanner text-white">Build a beautiful, modern website with <br> flexible components built from scratch.</p>
+              <button class="btn btn-action mt-5">Get started<i class="ms-2 fa-solid fa-plus"></i></button>
+              <div class="mt-5 d-flex flex-row">
+                  <div class="me-5">
+                      <h6 class="text-white">Trusted by:</h6>
+                  </div>
+
+                  <div class="me-2 me-sm-3 me-md-4">
+                      <img src="images/google-white.svg" alt="Google Logo" class="img-fluid logo">
+                  </div>
+
+                  <div class="me-2 me-sm-3 me-md-4">
+                      <img src="images/spotify-white.svg" alt="Spotify Logo" class="img-fluid logo">
+                  </div>
+
+                  <div class="me-2 me-sm-3 me-md-4">
+                      <img src="images/airbnb-white.svg" alt="Airbnb Logo" class="img-fluid logo">
+                  </div>
+
+                  <div>
+                      <img src="images/paypal-white.svg" alt="PayPal Logo" class="img-fluid logo">
+                  </div>
+              </div>
+
+          </div>
+          <div class="col-md-5 mb-5 mb-md-0">
+            <div class="cardback animate__animated animate__fadeInUp animate__delay-3s" style=" ">
+
+
+                <div class="d-flex justify-content-between p-4 pb-0">
+                    <div>
+                        <p class="credititle d-flex align-items-center" style="height: 40px;">Manage cards</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-add">Add new</button>
+                    </div>
+                </div>
+
+
+                <div class="mb-2 p-4 pt-1 pb-1">
+                      <img src="images/card.png" alt="Imagen" class="img-fluid animate__animated animate__fadeInRight animate__delay-3s">
+                </div>
+
+
+                <div class="d-flex justify-content-between p-4 pt-2 pb-2 linegray">
+                    <div>
+                        <p class="credititle mb-0">Starbucks</p>
+                        <p class="credisub">Pending - San Francisco, United States</p>
+                    </div>
+                    <div>
+                        <p class="text-end credititle">$5.50 USD</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between p-4 pt-2 pb-2 linegray mt-2">
+                    <div>
+                        <p class="credititle mb-0">Nike sports</p>
+                        <p class="credisub">Pending - Lisbon, Portugal</p>
+                    </div>
+                    <div>
+                        <p class="text-end credititle">$129.00 USD</p>
+                    </div>
+                </div>
+
+
+                <div class="p-4 pt-2">
+                    <a class="viewall " href="#">View all</a>
+                </div>
+            </div>
+          </div>
+
+      </div>
+  </div>
+</section>
+
+
+<section id="seccion2" class="py-md-5">
+  <div class="container mt-md-5">
+  <div class="row">
+
+      <div class="col-md-7">
+          <div class="position-relative">
+              <img src="images/image2.png" alt="Imagen de Fondo" class="img-fluid">
+              <button class="btn btn-videoder position-absolute m-3">Play video <i class="fa-solid fa-play"></i></button>
+          </div>
+      </div>
+
+      <div class="col-md-5 mb-5">
+          <button class="btn btn-tools mt144 mb-4">Tools</button>
+          <h1 class="txtbuild mb-5">We build for designer and developers</h1>
+          <p class="txtbanner">Get components and examples, including tons of variables that will help you grow your business.</p>
+      </div>
+  </div>
+</div>
+</section>
+
+<section id="seccion3" class="py-md-5">
+  <div class="container mt-md-5">
+  <div class="row">
+
+      <div class="col-md-6">
+        <button class="btn btn-feat mt90 mb-4">Features</button>
+        <p class="txtfeatures mb-5">Get components and examples, including</br> tons of variables that will help you grow </br>your business.</p>
+        <p class="features2"><i class="fa-solid fa-square-check me-2"></i>Perfect for modern startups</p>
+        <p class="features2"><i class="fa-solid fa-square-check me-2"></i>Fully costumizable and scalable</p>
+      </div>
+
+      <div class="col-md-6">
+            <div class="position-relative">
+                <img src="images/image3.png" alt="Imagen de Fondo" class="img-fluid">
+                <button class="btn btn-video position-absolute m-3">Play video <i class="fa-solid fa-play"></i></button>
+            </div>
+      </div>
+  </div>
+</div>
+
+</section>
+
+
+<section id="seccion4" class="py-md-5">
+  <div class="container mt-md-5">
+  <div class="row">
+
+      <div class="col-md-7">
+        <div class="row">
+
+                <div class="col-md-5  align-items-center">
+                  <div class="card mt-5" style="">
+                      <img src="images/person_03.jpg" class="card-img-top" alt="Card Image" style="  border-radius: 13px 13px 0px 0px;">
+                      <div class="row p-3 pb-2" style="">
+                          <div class="col-3 text-center">
+
+                              <div class="hg" >HG</div>
+
+                          </div>
+                          <div class="col-7  pt-2 ps-0" style="">
+
+                              <p>Jimmy Hendrix</p>
+                          </div>
+                          <div class="col-1 text-center pt-2">
+
+                              <i class="fa-regular fa-heart text-black-50 "></i>
+                          </div>
+                      </div>
+
+                  </div>
+                  <div class="card mt-3 mb-3 mb-md-0" style="">
+
+                    <div class="row p-3 pt-2 pb-2" style="">
+                        <div class="col-3 text-center">
+                            <div class="check"><i class="fa-solid fa-check text-white"></i></div>
+
+                        </div>
+                        <div class="col-9 pt-0 ps-0" style="">
+                            <p class="mb-0 custom">300 + components</p>
+                            <p class=" mb-0 buildto">Build to be customized.</p>
+                        </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="col-md-5">
+
+                    <div class="card text-center mb-3">
+                        <img src="images/airbnb.svg" class="card-img-top mx-auto mt-5" alt="Logo 1" style="max-width:150px;">
+                        <div class="card-body mb-3">
+                            <i class="fas fa-star colorstar mb-4"></i><i class="fas fa-star colorstar mb-4"></i><i class="fas fa-star colorstar mb-4"></i><i class="fas fa-star colorstar mb-4"></i><i class="fas fa-star  text-black-50 mb-4"></i>
+                            <h5 class="txtfeatures">4.95 out of 5</h5>
+                            <p class="card-text txtcards">From 23 reviews</p>
+                        </div>
+                    </div>
+
+                    <div class="card text-center">
+                        <img src="images/company_01.png" class="card-img-top mx-auto mt-5" alt="Logo 1" style="max-width: 83px;border-radius: 75px;">
+                        <div class="card-body">
+                            <h5 class="txtfeatures">Website UI kit</h5>
+                            <div class="profile-container mt-4">
+
+                                <img src="images/person_01.jpg" alt="Profile 1" class="img-fluid profile-image" width="35">
+
+                                <img src="images/person_02.jpg" alt="Profile 2" class="img-fluid profile-image" width="35">
+
+                                <img src="images/person_03.jpg" alt="Profile 3" class="img-fluid profile-image" width="35">
+                            </div>
+                            <div class="mt-3 text-center mb-4">
+                                <i class="fa-solid fa-paperclip  text-black-50 me-4"></i><i class="fa-regular fa-eye text-black-50 me-4"></i><i class="fa-regular fa-heart text-black-50 "></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+
+
+      <div class="col-md-5 mb-5">
+          <button class="btn btn-tech mt225 mb-4">Technology</button>
+          <h1 class="txtbuild mb-3">We use the latest <br> technologies on the market</h1>
+          <p class="txtbanner mb-4">Get components and examples, including tons of variables that will help you grow your business.</p>
+          <a class="astudies " href="#"> See case studies</a>
+      </div>
+  </div>
+</div>
+</section>
+
+<section id="seccion5" class="py-md-5">
+  <div class="container mt-md-5">
+  <div class="row">
+
+      <div class="col-md-6 mb-5 mb-md-0">
+        <button class="btn btn-tools mt90 mb-4">Easy to install</button>
+        <h1 class="txtbuild mb-1 mb-md-4">Download, install an run</h1>
+        <p class="txtbanner mb-5">Get components and examples, including tons of variables </br>that will help you grow your business.</p>
+        <div class="mt-5 d-flex flex-row">
+          <div class="me-5">
+            <img src="images/appstore.png" alt="Imagen" class="img-fluid zoom">
+          </div>
+          <div>
+            <img src="images/googlestore.png" alt="Imagen" class="img-fluid zoom">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-5 mb-md-0 mt-md-3">
+            <div class="position-relative">
+                <img src="images/image5.png" alt="Imagen de Fondo" class="img-fluid">
+                <button class="btn btn-video position-absolute m-3">Play video <i class="fa-solid fa-play"></i></button>
+            </div>
+      </div>
+  </div>
+</div>
+
+</section>
+
+<section id="seccion6" class="py-md-5">
+  <div class="container mt-md-5 ">
+  <div class="row fondo_azul">
+      <div class="col-md-8 ps-5 margenlateral">
+        <p class="txtfeatures text-white mb-3 mt-2 mt-md-5">Infinite solutions</p>
+        <p class="txtbanner2 text-white  mb100">Intuitive markup, powerful and lightning fast build tools, <br> everythingyou need to turn your ideas into incredible products</p>
+      </div>
+
+
+      <div class="col-md-4 text-end mauto px-5">
+              <button class="btn btn-action mt-5 mb-5 mb-md-0  "> Learn more<i class="fa-solid fa-arrow-right ms-2"></i></button>
+      </div>
+  </div>
+</div>
+
+</section>
+
+
+
+<section class="py-5">
+   <div class="container">
+       <div class="row">
+           <div class="col-md-12">
+               <div class="slick-carousel">
+
+                   <div class="col-md-3 col-6 carddown zoom2" style="padding:15px;">
+                       <div class="card text-center">
+                           <img src="images/airbnb.svg" class="card-img-top mx-auto mt-5" alt="Logo 1" style="max-width:150px;">
+                           <div class="card-body mb-5">
+                               <i class="fas fa-star colorstar mb-4"></i><i class="fas fa-star colorstar mb-4"></i><i class="fas fa-star colorstar mb-4"></i><i class="fas fa-star colorstar mb-4"></i><i class="fas fa-star  text-black-50 mb-4"></i>
+                               <h5 class="txtfeatures">4.95 out of 5</h5>
+                               <p class="card-text txtcards">From 23 reviews</p>
+                           </div>
+                       </div>
+                   </div>
+
+
+                   <div class="col-md-3 col-6 cardup zoom2" style="padding:15px;">
+                       <div class="card text-center">
+                           <img src="images/amazon.svg" class="card-img-top mx-auto mt-5" alt="Logo 1" style="max-width:150px;">
+                           <div class="card-body mb-5">
+                               <p class="card-text txtbanners mb-4">They build modern </br> looking websites easily </br> using Tabs.</p>
+                               <div class="mb-1">
+                                 <a class="acards mb-4" href="#">Learn more</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+
+
+                   <div class="col-md-3 col-6 carddown zoom2" style="padding:15px;">
+                       <div class="card text-center">
+                           <img src="images/slack.svg" class="card-img-top mx-auto mt-5" alt="Logo 1" style="max-width:150px;">
+                           <div class="card-body mb-5">
+                               <p class="card-text txtbanners mb-4">They build modern </br> looking websites easily </br> using Trello.</p>
+                               <div class="mb-1">
+                                 <a class="acards mb-4" href="#">Learn more</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+
+
+                   <div id="4" class="col-md-3 col-6 cardup zoom2" style="padding:15px;">
+                       <div class="card text-center">
+                           <img src="images/spotify.svg" class="card-img-top mx-auto mt-5" alt="Logo 1" style="max-width:150px;">
+                           <div class="card-body mb-5">
+                               <i class="fas fa-star colorstar mb-4"></i><i class="fas fa-star colorstar mb-4"></i><i class="fas fa-star colorstar mb-4"></i><i class="fas fa-star colorstar mb-4"></i><i class="fas fa-star  text-black-50 mb-4"></i>
+                               <h5 class="txtfeatures">4.95 out of 5</h5>
+                               <p class="card-text txtcards">From 23 reviews</p>
+                           </div>
+                       </div>
+                   </div>
+
+
+                   <div id="5" class="col-md-3 col-6 carddown zoom2" style="padding:15px;">
+                       <div class="card text-center">
+                           <img src="images/paypal.svg" class="card-img-top mx-auto mt-5" alt="Logo 1" style="max-width:150px;">
+                           <div class="card-body mb-5">
+                               <p class="card-text txtbanners mb-4">They build modern </br> looking websites easily </br> using Docker.</p>
+                               <div class="mb-1">
+                                 <a class="acards mb-4" href="#">Learn more</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+<script>
+    $(document).ready(function(){
+        $('.slick-carousel').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: false,
+            dots: false,
+            infinite: false,
+            draggable: true,
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 450, 
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
+
+<section id="seccion8" class="py-0 py-md-5">
+  <div class="container mt-0 mt-md-5">
+  <div class="row">
+      <div class="col-md-12 text-center">
+        <h1 class="txtbuild">Helpful answers</h1>
+        <p class="txtbanner mb-5">Start bulding fast and modern looking websites in no time.</p>
+        <div class="d-flex flex-row">
+
+
+          <div class="container mb-5">
+              <div class="row">
+
+                  <div class="col-md-6">
+
+                      <div class="accordion" id="accordionColumna1">
+
+                          <div class="accordion-item mb-3">
+                              <h2 class="accordion-header" id="heading1">
+                                  <button class="accordion-button accordion-style" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    <i class="fa-regular fa-file me-2"></i> Witch license do i need?
+                                  </button>
+                              </h2>
+                              <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionColumna1">
+                                  <div class="accordion-body text-start">
+                                    Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="accordion-item mb-3">
+                              <h2 class="accordion-header" id="heading2">
+                                  <button class="accordion-button accordion-style" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    <i class="fa-solid fa-lock me-2"></i>How do i get acces to my database?
+                                  </button>
+                              </h2>
+                              <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionColumna1">
+                                  <div class="accordion-body text-start">
+                                      Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="accordion-item mb-3">
+                              <h2 class="accordion-header" id="heading3">
+                                  <button class="accordion-button accordion-style" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    <i class="fa-regular fa-folder me-2"></i>How do i see previous orders?
+                                  </button>
+                              </h2>
+                              <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionColumna1">
+                                  <div class="accordion-body text-start">
+                                      Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-6">
+
+                      <div class="accordion" id="accordionColumna2">
+
+                          <div class="accordion-item mb-3">
+                              <h2 class="accordion-header" id="heading4">
+                                  <button class="accordion-button accordion-style" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                        <i class="fa-regular fa-file me-2"></i> Witch license do i need?
+                                  </button>
+                              </h2>
+                              <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionColumna2">
+                                  <div class="accordion-body text-start">
+                                      Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="accordion-item mb-3">
+                              <h2 class="accordion-header" id="heading5">
+                                  <button class="accordion-button accordion-style" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                      <i class="fa-solid fa-lock me-2"></i>How do i get acces to my database?
+                                  </button>
+                              </h2>
+                              <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionColumna2">
+                                  <div class="accordion-body text-start">
+                                      Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="accordion-item mb-3">
+                              <h2 class="accordion-header" id="heading6">
+                                  <button class="accordion-button accordion-style" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                      <i class="fa-regular fa-folder me-2"></i>How do i see previous orders?
+                                  </button>
+                              </h2>
+                              <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionColumna2">
+                                  <div class="accordion-body text-start">
+                                      Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="col-md-12 text-center">
+        <p class="txtbanner mb-1">I want to start a new project.</p>
+        <div class="mt-3 flex-row d-flex justify-content-center">
+          <div class="me-5">
+            <button class="btn btn-footer2">Buy now <i class="fa-solid fa-arrow-right ms-2"></i></button>
+          </div>
+          <div>
+            <a style="  align-self: center;" class="astudies" href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+</section>
+
+
+<footer class=" text-light py-5 footer_background">
+    <div class="container">
+
+        <div class="row border_footer mt-5 pb-5">
+
+            <div class="col-md-6">
+                <h3>Brillant solutions for your ideas</h3>
+                <p class="text-white">Modern looking websites</p>
+            </div>
+
+
+            <div class="col-md-6 d-flex justify-content-end">
+              <button class="btn btn-footer me-2"> <i class="fa-solid fa-book iconblue"></i> Documentation</button>
+                <button class="btn btn-footer2">Purchase now</button>
+            </div>
+        </div>
+
+
+        <div class="row border_footer mt-5 pb-5">
+
+            <div class="col-md-6">
+                <img class="logo_odoo mb-3" src="images/odoo-white.svg" alt="Logo">
+                <p id="txt">Odoo attemps to bring the best Development </br>
+                experience to designers and developers by offering </br>
+              the tools needed for having a quick and solid start in </br>
+                most web projects.
+                </p>
+
+                <div id="txt" class="mt-5 d-flex flex-row">
+                  <div class="me-5">
+                    <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                  </div>
+                  <div class="me-5">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                  </div>
+                  <div class="me-5">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  </div>
+                </div>
+            </div>
+
+
+            <div id="linksf" class="col-md-2 text-center text-md-start mt-5 mt-md-0">
+              <h5>Account</h5>
+                <p class="my-1"><a class="" href="#">Profile</a></p>
+                <p class="my-1"><a class="" href="#">Settings</a></p>
+                <p class="my-1"><a class="" href="#">Billing</a></p>
+                <p class="my-1"><a class="" href="#">Notifications</a></p>
+            </div>
+            <div id="linksf" class="col-md-2 text-center text-md-start">
+              <h5>About</h5>
+                <p class="my-1"><a class="" href="#">Services</a></p>
+                <p class="my-1"><a class="" href="#">Pricing</a></p>
+                <p class="my-1"><a class="" href="#">Contact</a></p>
+                <p class="my-1"><a class="" href="#">Careers</a></p>
+            </div>
+            <div id="linksf" class="col-md-2 text-center text-md-start">
+              <h5 clas="text-white">Company</h5>
+                <p class="my-1"><a class="" href="#">Community</a></p>
+                <p class="my-1"><a class="" href="#">Help center</a></p>
+                <p class="my-1"><a class="" href="#">Support</a></p>
+            </div>
+        </div>
+
+
+        <div class="row mt-3">
+
+            <div class="col-md-6 text-center text-md-start">
+                <p><i class="fa-regular fa-copyright me-2"></i><font class="text-white">Odoo.</font> All rights reserved</p>
+            </div>
+
+
+            <div class="col-md-6 text-end text-white text-center text-md-end">
+              <ul class="" style="list-style:none; text-decoration:none;">
+                  <li id="linksf">
+                      <a class="me-2 " href="#">Terms</a>
+                        <a class="me-2 " href="#">Privacy</a>
+                        <a class="" href="#">Cookies</a>
+                  </li>
+              </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Enlaces a Bootstrap 5.0 JavaScript y Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
